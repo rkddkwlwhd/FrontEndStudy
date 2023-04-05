@@ -1,0 +1,10 @@
+#header {
+  position: relative;
+  padding: 60px 0 54px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 768px;
+  min-width: 460px;
+  font-size: 12px;
+}

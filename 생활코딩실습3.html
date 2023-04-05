@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function BodySetColor(color){
+            document.querySelector('body').style.color = color;
+        }
+        function BodySetBackgroundColor(color){
+            document.querySelector('body').style.backgroundColor = color;
+        }
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if(self.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    i += 1;
+                }
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night';
+                
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length) {
+                    alist[i].style.color = 'blue';
+                    i += 1;
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body>
+   <h1><a href="index.html">BSCD LAB</a></h1>
+   <input type="button" value="night" onclick="
+   nightDayHandler(this);
+   ">
+   
+   <ol>
+
+        <li><a href="생활코딩실습1.html">Front-End</a></li>
+        <li><a href="생활코딩실습1.html">Back-End</a></li>
+        <li><a href="생활코딩실습1.html">Android</a></li>
+        <li><a href="생활코딩실습1.html">UI/UX</a></li>
+        <li><a href="생활코딩실습1.html">Game</a></li>
+   </ol>
+   <h2>Beyond Computer Software</h2>
+   <p>
+    BCSD Lab의 특장점은 우리 학교 조별과제로 절대 경험할 수 없는 체계적인 협업이라고 생각합니다.
+    메인 파일 하나에 몇 천줄 써내려가는 것에 아무 위화감 없이 살고있었는데
+    BCSD Lab에서 다른 개발자들과 토의하고 협업하면서 정말 많은 것을 배우게 되었습니다.
+    어떤 디자인 패턴을 사용해야 할까? 어떻게 예외를 방지할 수 있을까? 무슨 방식이 사용자 친화적일까?
+    메인한방 인생을 계속 살았더라면 끝내 궁금하지도 않았을 것들을 함께 이야기하며 차츰 성장해 나갔고
+    고민의 흔적이 담긴 프로젝트를 자신있게 기업의 면접관에게 보여줄 수 있었습니다.
+    협업다운 협업을 아직 해본 적이 없는 것 같다, 개발자로서의 성장이 필요하다는 분들께
+    꼭 한번 지원신청서를 작성하라고 말씀드리고 싶습니다.
+   </p>
+   <input type="button" value="night" onclick="
+   nightDayHandler(this);
+   ">
+</body>
+</html>
